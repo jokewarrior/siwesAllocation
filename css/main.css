@@ -1,0 +1,181 @@
+#nav{
+
+    background: transparent;
+    border:none;color: #FFF;
+
+}
+.show{
+    background: url("cartographer.png"), #000033;
+    /* fallback for old browsers */
+    background: url("cartographer.png"), -webkit-linear-gradient(to left, #000033, #000033);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: url("cartographer.png"), linear-gradient(to left, #000033, #000033);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+.carousel-caption h1,.carousel-caption p{
+    color: #FFF;
+    text-shadow: none;
+}
+.segoe{
+    /*font-family: 'Segoe UI Light',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;*/
+}
+
+.carousel-caption p{
+}
+.btn-next{
+    background: #000033;
+    color: #FFF;
+    border-radius: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.btn-next:hover{
+    color: #FFF;
+}
+.btn-next:active{
+    color: #FFF;
+}
+
+.profile{
+    width:240px;
+    background: #fff;
+    border-right: 1px solid #cfcfcf;
+    z-index: 0;
+}.profile-usermenu .nav{
+
+}
+.profile-usermenu ul{
+    background: transparent;
+    height: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+
+}
+.profile-usermenu ul li{
+    border-bottom: 1px solid #cfcfcf;
+    overflow-x: hidden;
+}
+.profile-usermenu ul li a{
+    color:#000;
+    font-size: 15px;
+    font-weight: 600;
+    /*font-family: 'Segoe UI Light',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;*/
+}
+.profile-usermenu ul li a i{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.profile-usermenu ul li a:hover{
+    color: #1f525d;
+    background: transparent;
+}
+.profile-usermenu ul li a.activeClass:hover{
+    color: #FFF !important;
+    background: #1f525d;
+}
+.profile-usermenu ul li:last-child{
+    border-bottom: none;
+}
+.profile-userpic{
+    color:#fff;
+    text-align: center;
+    margin: 40px auto 20px auto;
+}
+/*.profile-userpic h1{
+
+    background: #FFF;
+    line-height: 170%;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    font-size:300%;
+    font-family: 'Segoe UI Light',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid #333;
+}*/
+.profile-usertitle-name h5{
+    color: #444;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    /*font-family: 'Segoe UI Light',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;*/
+
+}
+@media (max-width: 766px) {
+
+    .profile{
+        position: fixed;
+        z-index: 1000;
+    }
+
+}
+body{
+    background: #fff;
+}
+.main-content,.main-contente{
+    height:600px;
+    overflow-y: auto;
+    padding: 10px 0px 30px 0px;
+}
+.profile-usertitle{
+    margin-bottom: 20px;
+}
+.profile-userpic h1{
+    background: #1f525d;
+    line-height: 200%;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    font-size:300%;
+    /*font-family: 'Segoe UI Light',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;*/
+    border: 2px solid #cfcfcf;
+    margin: 0px auto;
+    margin-left: 30px;
+}
+.activeClass{
+    background: #1f525d !important;
+    color: #FFF !important;
+}
+.details{
+    padding: 100px 20px;
+    padding-bottom: 0px;
+    border-right: 5px solid #e3e3e3;
+    background: #FFF;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.details ul li{
+    font-size: 18px;
+    color: #000;
+}
+.details h1{
+    margin-bottom: 40px;
+}
+.details button{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.cus-inp{
+
+    border:none;
+    border-bottom: 1px solid #e3e3e3;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 16px;
+
+}
+.cus-inp:focus{
+
+    outline:0;
+    box-shadow: none;
+    border-bottom: 1px solid seagreen;
+
+}
+#edit-profile{
+    z-index: 99999;
+}
+#read-msg{
+    z-index: 99999;
+}
