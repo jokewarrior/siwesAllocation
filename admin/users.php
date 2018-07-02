@@ -58,11 +58,12 @@ if (isset($_POST['sub_user'])) {
                             <td><?php echo $user_reg_no[$s]; ?></td>
                             <td><?php echo $user_phone[$s]; ?></td>
                             <td><?php echo ucfirst($location[$s]); ?></td>
-                            <td><a href="<?php echo $user_id[$s]; ?>" class="lnk_col"><i class="fa fa-pencil "></i></a></td>
+                            <td><a href="" class="lnk_col" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil "></i></a></td>
                             <td><a href="deleteUser.php?user_id=<?php echo $user_id[$s]; ?>" class="lnk_col" onclick="return confirm('Are you sure you want to delete <?php echo ucfirst($firstname[$s]) . ' ' . ucfirst($lastname[$s]); ?>');"><i class="fa fa-trash "></i></a></td>
                         </tr>
                     <?php } ?>
                 </table>
+                
             </div>
         </div>
         <div class="tab-pane fade" id="CreateUser">
@@ -101,6 +102,28 @@ if (isset($_POST['sub_user'])) {
         </div>
     </div>
 </div>
+<?php for ($d = 0; $d < $count; $d++) { ?>
+<!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>Your REGISTRATION NO is <?php echo $user_reg_no[$d]; ?></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+<?php }?>
 <style>
     .lnk_col{
         color:#000;
