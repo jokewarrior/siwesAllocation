@@ -9,6 +9,7 @@ session_start();
 if (!isset($_SESSION['user_id'])) {
     header("location:../login.php");
     }
+    
 $user = getuserdata();
 $user_id = $user['id'];
 $userFname = $user['Firstname'];
